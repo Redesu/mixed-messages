@@ -18,7 +18,7 @@ let yourTurn = [];
 
 
 for (let demon in demons) {
-    
+
     let action = randomNumber(demons[demon].length)
 
     switch (demon) {
@@ -36,9 +36,11 @@ for (let demon in demons) {
     }
 }
 
+//Converts the array into a string and add a line between each of them
 const formatTurn = turn => {
     const formatted = yourTurn.join('\n')
     console.log(formatted);
 }
+
 
 formatTurn(yourTurn);
